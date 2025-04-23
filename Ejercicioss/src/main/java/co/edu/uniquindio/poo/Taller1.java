@@ -14,17 +14,16 @@ public class Taller1 {
         public int edad;
 
 
-        public Estudiante (String identificacion, String nombres, String apellidos,
-                           String correo, String telefono, int edad){
-            this.identificacion = identificacion;
-            this.nombres = nombres;
-            this.apellidos = apellidos;
-            this.correo = correo;
-            this.telefono = telefono;
-            this.edad = edad;
+        public Estudiante (String id, String nom, String ape,
+                           String cor, String tel, int ed){
+            identificacion = id;
+            nombres = nom;
+            apellidos = ape;
+            correo = cor;
+            telefono = tel;
+            edad = ed;
 
         }
-
 
             public String toString() {
                 return
@@ -64,6 +63,7 @@ public class Taller1 {
                 int edad = scanner.nextInt();
 
                 Estudiante estudiante = new Estudiante(identificacion,nombres,apellidos,correo,telefono,edad);
+
 
                 System.out.println("Estudiante registrado");
                 System.out.println(estudiante);
