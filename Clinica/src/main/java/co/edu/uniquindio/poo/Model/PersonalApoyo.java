@@ -1,5 +1,8 @@
 package co.edu.uniquindio.poo.Model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public abstract class PersonalApoyo {
     private String nombre, cedula, direccion, telefono;
 
@@ -41,4 +44,6 @@ public abstract class PersonalApoyo {
     public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
+
+    public abstract double calcularCosto(List<Tratamiento> listTratamientos);
 }

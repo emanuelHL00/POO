@@ -58,4 +58,30 @@ public class Clinica {
     public void setListPacientes(List<Paciente> listPacientes) {
         this.listPacientes = listPacientes;
     }
+
+    public void agregarMedicoGeneral(MedicoGeneral medicoGeneral){
+        listMedicoGenerales.add(medicoGeneral);
+    }
+
+    public void agregarCirujano(Cirujano cirujano){
+        listCirujanos.add(cirujano);
+    }
+
+    public void agregarEspecialista(Especialista especialista){
+        listEspecialistas.add(especialista);
+    }
+
+    public List<Cirujano> obtenerCirujanosMayor3(){
+        List<Cirujano> listCirujanosFiltrados= new ArrayList<>();
+        for (Cirujano cirujano : listCirujanos){
+            if(cirujano.getNumIntervenciones()>3){
+                listCirujanosFiltrados.add(cirujano);
+            }
+        }
+        return listCirujanosFiltrados;
+    }
+
+
+
+
 }

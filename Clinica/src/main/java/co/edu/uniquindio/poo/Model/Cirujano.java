@@ -1,5 +1,7 @@
 package co.edu.uniquindio.poo.Model;
 
+import java.util.List;
+
 public class Cirujano extends PersonalApoyo {
 
     private int numIntervenciones;
@@ -16,6 +18,10 @@ public class Cirujano extends PersonalApoyo {
 
     public void setNumIntervenciones(int numIntervenciones) {
         this.numIntervenciones = numIntervenciones;
+    }
+
+    public double calcularCosto(List<Tratamiento> listTratamientos){
+        return 100000 + (numIntervenciones * 50000);
     }
 
 }

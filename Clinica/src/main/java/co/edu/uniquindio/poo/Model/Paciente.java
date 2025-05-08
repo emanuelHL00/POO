@@ -63,4 +63,8 @@ public class Paciente {
     public void setListConsultas(List<Consulta> listConsultas){
         this.listConsultas=listConsultas;
     }
+
+    public void agregarConsulta(Consulta consulta){
+        listConsultas.add(consulta);
+    }
 }
